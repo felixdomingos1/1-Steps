@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'jost', sans-serif;
+    background: linear-gradient(to bottom, #0a1268, #000000, #0a4878);
+}
+.main{
+    width: 400px;
+    height: 500px;
+    background: rgb(10, 16, 91);
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 5px 20px 50px #000;
+}
+#chk{
+    display: none;
+}
+
+.singUp{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+label{
+    color: #fff;
+    font-size: 2.3rem;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+input{
+    width: 60%;
+    height: 20%;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    width: 60%;
+    height: 35px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #1c08ff;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+button:hover{
+    background: #fefefe;
+    color: rgb(35, 16, 101);
+    border: 1px solid rgb(21, 12, 84);
+    transition: all .3s;
+}
+.LogIn{
+    height: 400px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+.LogIn label{
+    color: #25205c;
+    transform: scale(.6);
+}
+#chk:checked ~ .LogIn{
+    transform: translateY(-500px);
+}
+#chk:checked ~ .LogIn label{
+    transform: scale(1);
+}
+
+#chk:checked ~ .singUp label{
+    transform: scale(.6);
+}

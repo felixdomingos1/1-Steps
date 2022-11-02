@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    /* background: #564bf8; */
+    height: 30px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    margin-left: 120px;
+    margin-top: 20px;
+    font-size: 33px;
+    color: #588ad3;
+}
+.nav{
+    display: flex;
+}
+.nav ul{
+    display: flex;
+    margin-right: 160px;
+    margin-top: 15px;
+
+}
+.nav ul li{
+    list-style: none;
+    color: black;
+    margin: 15px;
+    font-size: 14px;
+}
+.nav input{
+    width: 130px;
+    height:44px;
+    margin-left: 10px;
+    background: #588ad3;
+    border: none;
+    color: rgb(237, 237, 237);
+    border-radius: 30px;
+}
+.nav input::placeholder{
+    color: #fff;
+    padding: 25px;
+}
